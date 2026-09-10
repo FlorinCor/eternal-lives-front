@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    color-scheme: dark;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: #08120e;
+    color: #fbf9f4;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #08120e;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #172b23;
+    border-radius: 4px;
+    border: 1px solid #223f34;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #c5a03e;
+  }
+}
+
+/* Leaflet Custom Map Styles */
+.leaflet-container {
+  font-family: inherit;
+  background-color: #121415 !important;
+}
+
+.leaflet-popup-content-wrapper {
+  background: #fbf9f4 !important;
+  color: #121415 !important;
+  border-radius: 10px !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5) !important;
+  padding: 4px !important;
+}
+
+.leaflet-popup-tip {
+  background: #fbf9f4 !important;
+}
+
+.leaflet-control-zoom a {
+  background-color: #0f1f19 !important;
+  color: #c5a03e !important;
+  border-color: #223f34 !important;
+}
+
+.leaflet-control-zoom a:hover {
+  background-color: #172b23 !important;
+}
+
+/* Subtle Text Shadow for Hero Headers */
+.text-shadow {
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.85);
+}
+
+.text-gold-shadow {
+  text-shadow: 0 0 20px rgba(197, 160, 62, 0.3);
+}
